@@ -1,18 +1,16 @@
 #include <gtest/gtest.h>
-#include "Debug/EmployDB"
+#include "db.h"
 
 TEST(DBTestSuite, dbSearch)
 {
-	auto testdb = new EmployDB::EmployDB();
-	testdb.
-	testdb->addEmployee("emp1", "12345678");
-	bool result = testdb->searchEmployee("emp1");
-	EXPECT_TRUE(result);
+	auto testdb = new EmployDB();
+	EXPECT_EQ(testdb->add(1, 2), 3);
 
-	delete testdbl;
+	delete testdb;
 }
 
 #include <iostream>
+int main(int argc, char **argv)
 {
 	std::cout << "Hello World!\n";
 	::testing::InitGoogleTest(&argc, argv);

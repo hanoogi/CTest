@@ -10,7 +10,8 @@ EmployDB::~EmployDB()
 {
 }
 
-int add(int a, int b)
+int EmployDB::add(int a, int b)
 {
 	return a + b;
 }
+
