@@ -8,7 +8,7 @@ TEST(DBTestSuite, dbSearch)
 
 	delete testdb;
 }
-
+//
 #include <iostream>
 int main(int argc, char **argv)
 {
